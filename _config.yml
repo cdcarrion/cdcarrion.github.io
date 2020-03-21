@@ -1,14 +1,14 @@
 # Site settings
-title: Steven V. Miller
-email: svmille@clemson.edu
+title: Cristian D. Carrión
+email: wwwcristiancarrion@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I'm a political scientist at Clemson University with research interests in
   international conflict and political behavior. Topics on my site include
   my teaching interests, R, LaTeX, and professional development.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://svmiller.com" # the base hostname & protocol for your site
-twitter_username: stevenvmiller
-github_username:  svmiller
+#url: "http://svmiller.com" # the base hostname & protocol for your site
+twitter_username: Cristian1512
+github_username:  cdcarrion
 orcid_id: 0000-0003-4072-6263
 google_scholar_id: BNr-fb8AAAAJ
 
