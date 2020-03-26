@@ -7,16 +7,5 @@
 - title: "CV"
   href: "/cv/"
 
-- title: "For Students"
-  href: "/for-students/"
-  subcategories:
-    - subtitle: "Letters of Recommendation"
-      subhref: "/for-students/letters-of-recommendation/"
-    - subtitle: "Pi Sigma Alpha"
-      subhref: "/for-students/pi-sigma-alpha/"
-
 - title: "Research"
   href: "/research/"
-
-- title: "Teaching"
-  href: "/teaching/"
