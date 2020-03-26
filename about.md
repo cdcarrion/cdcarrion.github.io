@@ -4,11 +4,10 @@ title: About
 permalink: /about/
 ---
 
-{% include image.html url="/images/svm-2013-clemson-gatech-crop.jpg" caption="Me at the Clemson-Georgia Tech game in 2013." width=350 align="right" %}
+{% include image.html url="/images/rsz_2ccc.jpg" caption="Me & My Uke." width=350 align="right" %}
 
-I do have interests outside of the academy, but not many.
+Tengo muchos intereses fuera de la academia!!!
 
-I am a proud graduate of <a class="tosu" href="http://www.osu.edu/"><em><abbr title="Yes, the THE is important">The</abbr></em> Ohio State University</a>. I do not conceal that well, nor do I try. This is especially true during football season.
+Soy un orgulloso de la ciudad de <a class="tosu"><em><abbr title="Yes, the THE is important">Santo Domingo</abbr></em> - Ecuador</a>. a pesar que he pasado toda mi etapa universitaria hasta la actualidad en Quito-Ecuador.
 
-I don’t have much time beyond obsessing about the Buckeyes to follow other sports. That said, I’m convinced the Cleveland Browns will be [the first team in the NFL to go 19-0](https://www.youtube.com/watch?v=CPLzmctAInQ) and, likewise, the Cleveland Indians will be the first team in Major League Baseball history to finish the season 173-0. I believe these are reasonable, modest predictions for the Browns and Indians that I make every season. Now, I’ve been wrong about these projections before—repeatedly, in all honesty. However, I’ve got a really good feeling about next year...
-
+Entre las cosas que me obsesionan está entre la música ya que desde los 13 años he estado practicando algunos instrumentos entre mis favoritos la guitarra (me hubiera dedicado a la música en otro mundo) y con respecto a los deportes seré hincha del FC Barcelona por lo que el próximo año tengo buen presentimiento que obtendrá la Champions!.
