@@ -1,25 +1,16 @@
 ---
-title: "What Do We Know About British Attitudes Toward Immigration? A Pedagogical Exercise of Sample Inference and Regression"
-output:
-  md_document:
-    variant: gfm
-    preserve_yaml: TRUE
-knit: (function(inputFile, encoding) {
-   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
-author: "steve"
-date: '2020-03-23'
-excerpt: "What explains British attitudes toward immigration? Here is a pedagogical example from the European Social Survey in 2018-19 that's more useful in teaching students about inference from a sample and how to read a regression table."
+title: "Everybody Writes: A Web Content Approach for Students"
+author: steve
 layout: post
+permalink:
 categories:
-  - R
-  - Political Science
   - Teaching
-image: "british-immigration.jpg"
+excerpt: "Ann Handley's *Everybody Writes* offers a novel approach for students on how to write."  
 ---
 
 {% include image.html url="/images/handley-everybody-writes.png" caption="Everybody Writes" width=300 align="right" href="https://www.amazon.com/Everybody-Writes-Go-Creating-Ridiculously-ebook/dp/B00LMB5P0G" %}
 
-I've no doubt college students who are too young to remember life without internet think of the internet when they engage in a writing exercise. There must be some explanation for why some students [Capitalize Every Word In A Sentence In A Paper Like Buzzfeed Does](https://www.amazon.com/Everybody-Writes-Go-Creating-Ridiculously-ebook/dp/B00LMB5P0G) or engage in an ostensibly random confusion of proper nouns and common nouns. Seriously, I've seen students write about "president obama" , "congress", "republicans", or "putin" but feel the need to capitalize random words like "War", "Health", or "Oil". I can't explain the latter, though I think it's a Twitter effect.[^helpme] I think professors assume the internet is a major problem for some poor writing they observe in class papers and that an increasing web focus only compounds the problem. It would be a ready source of slang, jargon, and poorly structured writing we tend to observe.
+I've no doubt college students who are too young to remember life without internet think of the internet when they engage in a writing exercise. There must be some explanation for why some students [Capitalize Every Word In A Sentence In A Paper Like Buzzfeed Does](https://www.amazon.com/Everybody-Writes-Go-Creating-Ridiculously-ebook/dp/B00LMB5P0G) or engage in an ostensibly random confusion of proper nouns and common nouns. Seriously, I've seen students write about "president obama" , "congress", "republicans", or "putin" but feel the need to capitalize random words like "War", "Health", or "Oil". I can't explain the latter, though I think it's a Twitter effect.[^helpme] I think professors assume the internet is a major problem for some poor writing they observe in class papers and that an increasing web focus only compounds the problem. It would be a ready source of slang, jargon, and poorly structured writing we tend to observe. 
 
 [^helpme]: *Please* let me know if you have answer for the origin of this confusion of common noun and proper noun. I honestly can't explain it.
 
@@ -125,7 +116,7 @@ Students routinely misplace modifiers in an odd word order. I see these errors a
 
 > Though often misunderstood, scholars know that anarchy does not mean chaos.
 
-What is misunderstood in this sentence? Scholars who argue that anarchy is simply a fact of life in the international system (i.e. there is no world government)? Or anarchy itself (via, I assume, the general public)?
+What is misunderstood in this sentence? Scholars who argue that anarchy is simply a fact of life in the international system (i.e. there is no world government)? Or anarchy itself (via, I assume, the general public)? 
 
 If it's the former, then the sentence contains a non sequitir. Scholars may be misunderstood but that does not appear to matter to a claim about anarchy that the sentence does not question.
 
