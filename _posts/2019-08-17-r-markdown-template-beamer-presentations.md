@@ -49,18 +49,18 @@ titlefont: "Titillium Web" # Try out some font options if xelatex
 ---
 ```
 
-Long-time users of my templates or R Markdown should recognize a fair bit here. Make `title:` the topic of your presentation. `subtitle:` is optional, but try to use it since it looks nice and fleshes out the title page. The `author:` field should be who you are (or me, you're free to make everything about and by me). The `institute:` field should be your department or employer. 
+Long-time users of my templates or R Markdown should recognize a fair bit here. Make `title:` the topic of your presentation. `subtitle:` is optional, but try to use it since it looks nice and fleshes out the title page. The `author:` field should be who you are (or me, you're free to make everything about and by me). The `institute:` field should be your department or employer.
 
 The `titlegraphic:` field should be a relative(-ish) path to a brand marker for your university or employer. LaTeX (as far as I know) is a bit wonky about paths. My template specifies this field like this, if you wanted to see what it looks like under the proverbial hood.
 
 ```latex
-% \titlegraphic{\includegraphics[width=0.3\paperwidth]{\string~/Dropbox/teaching/clemson-academic.png}} 
-% if you want to know what this looks like without it as a Markdown field. 
+% \titlegraphic{\includegraphics[width=0.3\paperwidth]{\string~/Dropbox/teaching/clemson-academic.png}}
+% if you want to know what this looks like without it as a Markdown field.
 % -----------------------------------------------------------------------------------------------------
 $if(titlegraphic)$\titlegraphic{\includegraphics[width=0.3\paperwidth]{\string~$titlegraphic$}}$endif$
 ```
 
-Thus, start a relative(-ish) path to your university's "brand" marker, wherever it is on your hard drive. If you're a new student trying to figure this stuff out for the first time and are unaware what I mean by "brand" in the context of universities: trust me; your university has a brand "guideline" and has copious guides to "protecting" the "brand." Your university speaks of itself like a corporation and would hire two dozen Darren Rovells to "protect" and "promote" the "brand" if they haven't already. Don't believe me? Here's my beloved alma mater [trying to file a trademark for the most common word in the English language](https://www.cnn.com/2019/08/14/us/the-ohio-state-university-trademark-trnd/index.html) to protect its "brand" by arguing the most common word in the English language is actually its intellectual property. 
+Thus, start a relative(-ish) path to your university's "brand" marker, wherever it is on your hard drive. If you're a new student trying to figure this stuff out for the first time and are unaware what I mean by "brand" in the context of universities: trust me; your university has a brand "guideline" and has copious guides to "protecting" the "brand." Your university speaks of itself like a corporation and would hire two dozen Darren Rovells to "protect" and "promote" the "brand" if they haven't already. Don't believe me? Here's my beloved alma mater [trying to file a trademark for the most common word in the English language](https://www.cnn.com/2019/08/14/us/the-ohio-state-university-trademark-trnd/index.html) to protect its "brand" by arguing the most common word in the English language is actually its intellectual property.
 
 Just search "brand" on your university's website and you should be good to go from there. For what it's worth, the `titlegraphic:` field is optional. You can omit this if you'd like, but then you should make the `institute:` field your university or employer.
 
@@ -107,7 +107,7 @@ I'm of the mentality that most Beamer presentations waste precious space with th
 
 {% raw %}
 ```latex
-% Allow for those simple two-tone footlines I like. 
+% Allow for those simple two-tone footlines I like.
 % Edit the colors as you see fit.
 %--------------------------------------------------
 \defbeamertemplate*{footline}{my footline}{%
@@ -178,6 +178,4 @@ According to this graph, Congressman Astley comfortably secures re-election agai
 
 ## Replication, and Such
 
-You can find the files to reproduce this presentation [here on my Github](https://github.com/svmiller/svm-r-markdown-templates/tree/master/beamer-example). The template is [here](https://github.com/svmiller/svm-r-markdown-templates/blob/master/svm-latex-beamer.tex). The R Markdown file of the sample presentation is [here](https://github.com/svmiller/svm-r-markdown-templates/blob/master/beamer-example/svm-rmarkdown-beamer-example.Rmd) and this PDF shows [what the finished product looks like](https://github.com/svmiller/svm-r-markdown-templates/blob/master/beamer-example/svm-rmarkdown-beamer-example.pdf). 
-
-
+You can find the files to reproduce this presentation [here on my Github](https://github.com/svmiller/svm-r-markdown-templates/tree/master/beamer-example). The template is [here](https://github.com/svmiller/svm-r-markdown-templates/blob/master/svm-latex-beamer.tex). The R Markdown file of the sample presentation is [here](https://github.com/svmiller/svm-r-markdown-templates/blob/master/beamer-example/svm-rmarkdown-beamer-example.Rmd) and this PDF shows [what the finished product looks like](https://github.com/svmiller/svm-r-markdown-templates/blob/master/beamer-example/svm-rmarkdown-beamer-example.pdf).
