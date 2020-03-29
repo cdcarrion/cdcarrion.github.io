@@ -23,7 +23,7 @@ image: "bettanier-black-spot-1887.jpg"
 
 This is another one of those things I find myself doing from time to time in my research so it might be advisable to write it down and remember how to do it.
 
-Rivalries are an important concept in the quantitative study of international conflict. This relates to one of the more important takeaways from the data on inter-state disputes: they're not randomly assigned across dyads. A few dyads are [disproportionately responsible for large conflicts and wars](https://www.amazon.com/Bound-Struggle-Strategic-Evolution-International/dp/0472112740). I use the India-Pakistan dyad in [my upper-division conflict course](http://posc3610.svmiller.com/) as an illustration of this phenomenon. The dyad was created in 1947 following the contentious partition of British Raj along ill-defined Radcliffe Line. War immediately followed for [the cause of territorial consolidation](http://svmiller.com/blog/2015/04/some-psfrustrations-from-an-ir-perspective/) and relations have been tense ever since. Indeed, India and Pakistan have had four wars since their mutual creation and have been in a MID (often a fatal MID) [around 70% of their existence](https://github.com/svmiller/posc3610/blob/master/recurrent-conflict/posc3610-lecture-recurrent-conflict.pdf). The rivalry scholarship in international relations argues these previous crises lead to the emergence of rivalry relationships in which states view each other as threats and compete against each other. This makes future crises more likely. 
+Rivalries are an important concept in the quantitative study of international conflict. This relates to one of the more important takeaways from the data on inter-state disputes: they're not randomly assigned across dyads. A few dyads are [disproportionately responsible for large conflicts and wars](https://www.amazon.com/Bound-Struggle-Strategic-Evolution-International/dp/0472112740). I use the India-Pakistan dyad in [my upper-division conflict course](http://posc3610.svmiller.com/) as an illustration of this phenomenon. The dyad was created in 1947 following the contentious partition of British Raj along ill-defined Radcliffe Line. War immediately followed for [the cause of territorial consolidation](http://svmiller.com/blog/2015/04/some-psfrustrations-from-an-ir-perspective/) and relations have been tense ever since. Indeed, India and Pakistan have had four wars since their mutual creation and have been in a MID (often a fatal MID) [around 70% of their existence](https://github.com/svmiller/posc3610/blob/master/recurrent-conflict/posc3610-lecture-recurrent-conflict.pdf). The rivalry scholarship in international relations argues these previous crises lead to the emergence of rivalry relationships in which states view each other as threats and compete against each other. This makes future crises more likely.
 
 There are a number of ways of identifying rivalry relationships. Most classic rivalry scholarship identified rivalries based on past disputes. [Diehl and Goertz (2000)](https://muse.jhu.edu/book/7260), for example, develop a rivalry classification that depends on the volume of MIDs in a given window of time. However useful, this "dispute-density" approach uses past dispute history to predict future disputes in a matter not unlike how [roll call votes in the past are use to predict roll call votes in the future](https://www.jstor.org/stable/2669306). Any observed relationship might simply be a tautology.
 
@@ -145,7 +145,7 @@ Finally, `type1`, `type2`, and `type3` variables describe the nature of the riva
 
 Many rivalries have a second dimension but very few have three dimensions. The West Germany-East Germany rivalry (1949-1973) is an accessible three-dimensional rivalry in this data. Therein, the rivalry was primarily ideological (`type1`), but had a secondary positional aspect (`type2`) and a minimal, but still important, spatial/territorial element (`type3`) on top of that.
 
-There is more coding necessary to get the most use out of these data, but the raw data can already communicate some basic descriptive statistics about strategic rivalries. For example, here are the the 10 longest rivalries in the data. It's unsurprising that the top seven are European great power rivalries. 
+There is more coding necessary to get the most use out of these data, but the raw data can already communicate some basic descriptive statistics about strategic rivalries. For example, here are the the 10 longest rivalries in the data. It's unsurprising that the top seven are European great power rivalries.
 
 
 ```r
@@ -261,7 +261,7 @@ We can also do a basic summary of the distribution of rivalries by primary rival
 
 
 ```r
-strategic_rivalries %>% group_by(type1) %>% 
+strategic_rivalries %>% group_by(type1) %>%
   summarize(n = n()) %>% ungroup() %>%
   arrange(-n) %>%
   mutate(percent = paste0(mround2(n/sum(n)),"%")) %>%
@@ -322,9 +322,9 @@ strategic_rivalries %>%
 # We'll fix some of this a bit later too.
 strategic_rivalries$ccodea[strategic_rivalries$sidea == "Austria"] <- 300
 # Prussia doesn't appear as a partial matching term for successor state Germany
-strategic_rivalries$ccodea[strategic_rivalries$sidea == "Prussia"] <- 255 
+strategic_rivalries$ccodea[strategic_rivalries$sidea == "Prussia"] <- 255
 # countrycode instinctively gives Germany's ccode to West Germany
-strategic_rivalries$ccodea[strategic_rivalries$sidea == "West Germany"] <- 260 
+strategic_rivalries$ccodea[strategic_rivalries$sidea == "West Germany"] <- 260
 # Ottoman Empire doesn't appear as a matching term for successor state Turkey
 strategic_rivalries$ccodea[strategic_rivalries$sidea == "Ottoman Empire"] <- 640
 # Silly error, but countrycode doesn't know between Vietnams
@@ -334,10 +334,10 @@ strategic_rivalries$ccodea[strategic_rivalries$sidea == "North Vietnam"] <- 816
 strategic_rivalries$ccodeb[strategic_rivalries$sideb == "Ottoman Empire"] <- 640
 # Note: I'm creating this since Venice never appears in the CoW data. I won't ever use it.
 # You probably won't either.
-strategic_rivalries$ccodeb[strategic_rivalries$sideb == "Venice"] <- 324 
+strategic_rivalries$ccodeb[strategic_rivalries$sideb == "Venice"] <- 324
 strategic_rivalries$ccodeb[strategic_rivalries$sideb == "Prussia"] <- 255
 # countrycode always struggles with Serbia as successor state to Yugoslavia.
-strategic_rivalries$ccodeb[strategic_rivalries$sideb == "Serbia"] <- 345 
+strategic_rivalries$ccodeb[strategic_rivalries$sideb == "Serbia"] <- 345
 ```
 
 Next, we'll create a `ccode1` and `ccode2` variable that makes these non-directed. The lower country code will always appear first.
@@ -389,7 +389,3 @@ NRY %>%
 ```
 
 That's it. Doing this takes a table of 197 rivalries in Thompson and Dreyer's appendix, entered to a spreadsheet in about 30 minutes (if I recall that effort correctly), saved as an R data set, and extends it into rivalry-year data to be quickly merged into dyad-year data. Just a few lines of R code from `tidyerse` with some light maintenance from the `countrycode` package are all you need.
-
-
-
-

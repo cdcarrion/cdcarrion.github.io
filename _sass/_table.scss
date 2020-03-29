@@ -1,16 +1,16 @@
-#stevetable {
+#cristable {
 	width: 100%;
 	margin-bottom: 15px;
-	border-collapse: collapse; 
+	border-collapse: collapse;
 
 }
 
-#stevetable caption {
+#cristable caption {
 	font-weight: bold;
 	padding-bottom: 5px;
-} 
+}
 
-#stevetable th {
+#cristable th {
 	font-weight: bold;
 	color: #fff;
 	border-bottom: 1px #ddd solid;
@@ -19,10 +19,10 @@
 }
 
 
-#stevetable td {
-	padding: 3px 3px 3px 10px;	
+#cristable td {
+	padding: 3px 3px 3px 10px;
 	border-bottom: 1px #ddd solid;
 }
 
-#stevetable tr:nth-child(even) {background: #f9f9f9}
-#stevetable tr:nth-child(odd) {background: #fdfdfd}
+#cristable tr:nth-child(even) {background: #f9f9f9}
+#cristable tr:nth-child(odd) {background: #fdfdfd}
