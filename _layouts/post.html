@@ -13,17 +13,6 @@ layout: default
   {% endfor %}
 
 {% endif %}
-
-<!-- htmlwidgets dependencies -->
-{% if page.htmlwidgets %}
-{% for html_dep in site.static_files %}
-  {% if html_dep.path contains 'htmlwidgets_deps/' %}
-    {% assign start = "<script src=" | append: {{site.baseurl}} %}
-    {{html_dep.path | prepend: start | append: "></script>" }}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
 </p>
   </header>
 
@@ -55,3 +44,12 @@ layout: default
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 </div>
+<!-- htmlwidgets dependencies -->
+{% if page.htmlwidgets %}
+{% for html_dep in site.static_files %}
+  {% if html_dep.path contains 'htmlwidgets_deps/' %}
+    {% assign start = "<script src=" | append: {{site.baseurl}} %}
+    {{html_dep.path | prepend: start | append: "></script>" }}
+    {% endif %}
+  {% endfor %}
+{% endif %}
