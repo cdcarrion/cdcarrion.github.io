@@ -1,0 +1,69 @@
+---
+title: "test5"
+output:
+  md_document:
+    variant: gfm
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+   rmarkdown::render(inputFile, encoding = encoding, output_dir = "C:/Users/crist/Documents/GitHub/svmiller.github.io/_posts") })
+author: "Cristian"
+date: '2020-04-06'
+always_allow_html: true
+htmlwidgets: TRUE
+excerpt: "Here is some R code"
+layout: post
+categories:
+  - R
+---
+
+```{r setup, include=FALSE, cache=F}
+
+base_dir <- "C:/Users/crist/Documents/GitHub/svmiller.github.io/"
+base_url <- "/"
+fig_path <- "images/"
+
+knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
+knitr::opts_chunk$set(fig.path = fig_path, dpi= 300,
+                      cache.path = '../cache/dow-jones-no-good-very-bad-day/',
+                      message=FALSE, warning=FALSE,
+                      cache = TRUE) 
+
+library(tidyverse)
+library(plotly)
+library(htmlwidgets)
+library(metricsgraphics)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=T, eval=T, cache=T, warning=F}
+x <- c(1:100)
+random_y <- rnorm(100, mean = 0)
+data <- data.frame(x, random_y)
+
+#py = plotly("RgraphingAPI", "ektgzomjbx")
+#py$ggploty(plot1, session="knitr")
+plot1 = plot_ly(data, x = ~x, y = ~random_y, type = 'scatter', mode = 'lines')
+
+plot1
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r knitchunk, echo=F, eval=F}
+#setwd("C:/Users/crist/Documents/GitHub/svmiller.github.io/_source")
+knitr::knit("test5.Rmd",
+            output = "C:/Users/crist/Documents/GitHub/svmiller.github.io/_posts/2020-04-06-test5.md")
+```
