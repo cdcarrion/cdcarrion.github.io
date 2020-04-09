@@ -76,6 +76,7 @@ mjs_grid(plots)
 ```
 
 
+
 ```{r knitchunk, echo=F, eval=F}
 #setwd("C:/Users/crist/Documents/GitHub/svmiller.github.io/_source")
 knitr::knit("test4.Rmd",
